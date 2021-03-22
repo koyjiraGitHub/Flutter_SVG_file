@@ -28,7 +28,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    double cpWhidth = 500;
+    double cpWhidth = 400;
+    double cpheigh = 500;
     return Scaffold(
       appBar: AppBar(
         title: Text("SVG to Custom Paint Test"),
@@ -38,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: CustomPaint(
           size: Size(
               cpWhidth,
-              (cpWhidth * 0.56)
+              (cpheigh * 0.56)
                   .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
           painter: RPSCustomPainter(),
         ),
